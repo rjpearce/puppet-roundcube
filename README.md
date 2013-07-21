@@ -1,9 +1,16 @@
 puppet-roundcube
 ================
 
-Roundcube Module for Puppet
+ ## Overview
 
-Example usage:
+ Install and configure roundcube with optional apache/mysql configuration.
+
+ * `roundcube` : Main define for the roundcube.
+
+ ## Examples
+
+
+ Typical user with apache and mysql configuration:
 
   roundcube { 'webmail.example.com':
     docroot        => '/var/www/webmail.example.com',
