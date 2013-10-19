@@ -7,6 +7,7 @@ define roundcube::apache(
   validate_string($docroot, $vhost)
 
   apache::vhost { "$vhost redirect":
+    servername      => $vhost,
     ensure          => $ensure,
     docroot         => $docroot,
     port            => '80',
